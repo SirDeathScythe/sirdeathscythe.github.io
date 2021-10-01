@@ -1,3 +1,48 @@
+/* basic styles */
+html {
+  font-size: 100%;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* End basic styles */
+
 Img {
   width: 100%;
+  height: auto;
+  display: block;
+}
+
+p {
+  color: purple;
+}
+
+.myColor {
+  color: red;
+  font-size: 56px;
+}
+
+.myColorTwo {
+  color: blue;
+  font-size: 75px;
+  font-weight: bold;
+}
+
+h1 {
+  color: skyblue;
 }
