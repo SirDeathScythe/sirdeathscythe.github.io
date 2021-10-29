@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Crazy Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css" />
   </head>
   <body>
     <header class="hero-box">
@@ -22,63 +23,103 @@
       </section>
     </header>
     <!-- Begin Portfolio Gallery-->
-    <section class="portfolio-gallery">
+    <section class="portfolio-container">
       <h1>Portfolio</h1>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/Flower 1.JPG">
-          <img
-            class="gallery-img"
-            src="img/Flower 1.JPG"
-            alt="close up of pink rose"
-          />
-        </a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/Flower 2.JPG">
-          <img
-            class="gallery-img"
-            src="img/Flower 2.JPG"
-            alt="close up of puerple flowers"
-          />
-        </a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/Flower 3.jpg">
-          <img
-            class="gallery-img"
-            src="img/Flower 3.jpg"
-            alt="black and white lettuce"
-          />
-        </a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/Flower 4.jpg">
-          <img
-            class="gallery-img"
-            src="img/Flower 4.jpg"
-            alt="bumble bee in a rose"
-          />
-        </a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/Flower 5.jpg">
-          <img class="gallery-img" src="img/Flower 5.jpg" alt="small clovers" />
-        </a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/Flower 6.jpg">
-          <img class="gallery-img" src="img/Flower 6.jpg" alt="winding leafs" />
-        </a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/Flower 7.jpg">
-          <img
-            class="gallery-img"
-            src="img/Flower 7.jpg"
-            alt="flowing peones"
-          />
-        </a>
-      </div>
+      <section class="portfolio-gallery">
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/Flower 1.JPG"
+            data-glightbox="title: Flower; description: Pink Rose"
+          >
+            <img
+              class="gallery-img"
+              src="img/Flower 1.JPG"
+              alt="close up of pink rose"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/Flower 2.JPG"
+            data-glightbox="title: Flower; description: Purple Fray"
+          >
+            <img
+              class="gallery-img"
+              src="img/Flower 2.JPG"
+              alt="close up of puerple flowers"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/Flower 3.jpg"
+            data-glightbox="title: Lettuce; description: Black & White Curl"
+          >
+            <img
+              class="gallery-img"
+              src="img/Flower 3.jpg"
+              alt="black and white lettuce"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/Flower 4.jpg"
+            data-glightbox="title: Flower; description: Bee In A Rose"
+          >
+            <img
+              class="gallery-img"
+              src="img/Flower 4.jpg"
+              alt="bumble bee in a rose"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/Flower 5.jpg"
+            data-glightbox="title: Leafs; description: Small Clovers"
+          >
+            <img
+              class="gallery-img"
+              src="img/Flower 5.jpg"
+              alt="small clovers"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/Flower 6.jpg"
+            data-glightbox="title: Leafs; description: Long Reaching Branch"
+          >
+            <img
+              class="gallery-img"
+              src="img/Flower 6.jpg"
+              alt="winding leafs"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/Flower 7.jpg"
+            data-glightbox="title: Flower; description: Fluttering"
+          >
+            <img
+              class="gallery-img"
+              src="img/Flower 7.jpg"
+              alt="flowing peones"
+          /></a>
+        </div>
+      </section>
     </section>
+    <script src="js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop: true });
+    </script>
   </body>
 </html>
