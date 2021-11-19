@@ -96,6 +96,33 @@ img {
 .nav-menu a:hover {
   border-bottom: 1px solid #000;
 }
+
+.top-nav {
+  background: none;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  align-content: top;
+  position: fixed;
+  top: 0;
+  height: 8rem;
+}
+
+@supports (position: sticky) {
+  .top-nav {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.top-nav .logo a,
+.top-nav .nav-menu a {
+  color: white;
+}
+
+.top-nav .nav-menu a:hover {
+  border-bottom: 1px solid #fff;
+}
+
 /* Begin Hero Styles */
 .hero-box {
   display: grid;
