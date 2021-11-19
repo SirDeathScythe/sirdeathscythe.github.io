@@ -5,6 +5,18 @@ html {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   height: 100%;
+  scroll-behavior: smooth;
+}
+
+@media (preferes-reduced-motion) {
+  html {
+    scroll-behavior: initial;
+  }
+}
+
+.section-scroll {
+  scroll-margin-top: 9rem;
+  padding: 0 0 4rem 0;
 }
 
 body {
@@ -134,6 +146,7 @@ img {
   align-items: start;
   height: 100%;
   width: 100%;
+  margin-top: -8rem;
 }
 
 .hero-image-box {
@@ -295,6 +308,18 @@ img {
   .about-social a {
     font-size: 3rem;
   }
+
+  .nav-bar {
+    line-height: 1.5rem;
+  }
+
+  .nav-menu {
+    padding: 0 1rem;
+  }
+
+  .nav-item {
+    flex: 1 1;
+  }
 }
 
 @media (min-width: 920px) {
@@ -330,5 +355,20 @@ img {
 
   .about-social a {
     font-size: 4rem;
+  }
+
+  .nav-bar {
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    line-height: 1rem;
+  }
+
+  .nav-menu {
+    width: auto;
+    justify-self: end;
+  }
+
+  .top-nav {
+    width: 100%;
   }
 }
